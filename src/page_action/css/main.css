@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 240px;
+	height: 360px;
+}
+
+h1 {
+	padding: 4px;
+	font-size: 1em;
+}
+
+ul.download_links{
+	list-style: none;
+}   
+
+ul.download_links li{
+	cursor: pointer;
+	padding: 5px 8px;
+	font-size: 1em;
+	border-bottom: 1px solid rgb(111, 179, 255);
+	background: rgb(59, 151, 255);
+	color: white;
+}   
+
+ul.download_links li:hover {
+    background: rgb(22, 131, 255);
+}
+
+ul.download_links li:last-child{
+	border-bottom: none;
+};

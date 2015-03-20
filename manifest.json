@@ -1,8 +1,8 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
-  "version": "0.0.1",
+  "name": "Youtube Downloader",
+  "version": "1.0.0",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
+  "description": "This extension lets you download Youtube videos.",
   "homepage_url": "http://extensionizr.com",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "icons": {
@@ -11,14 +11,19 @@
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
-  "browser_action": {
+  "page_action": {
     "default_icon": "icons/icon19.png",
     "default_title": "browser action demo",
-    "default_popup": "src/browser_action/browser_action.html"
+    "default_popup": "src/page_action/show_links.html"
+  },
+  "background": {
+    "scripts": ["src/page_action/bootstrap.js"],
+    "persistent": false
   },
   "permissions": [
     "tabs",
     "http://*/",
-    "https://*/"
+    "https://*/",
+    "downloads"
   ]
 }
